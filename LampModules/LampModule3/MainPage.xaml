@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="LampModule3.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LampModule3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ToggleSwitch x:Name="toggleSwitch" Header="Lamp Switch" HorizontalAlignment="Left" Margin="86,82,0,0" VerticalAlignment="Top" Toggled="LampSwitch_Toggled"/>
+        <Slider Header="Hue" x:Name="hueSlider" HorizontalAlignment="Left" Margin="86,180,0,0" VerticalAlignment="Top" Width="199"/>
+        <Slider Header="Saturation" x:Name="saturationSlider" HorizontalAlignment="Left" Margin="86,250,0,0" VerticalAlignment="Top" Width="199"/>
+        <Slider Header="Brightness" x:Name="brightnessSlider" HorizontalAlignment="Left" Margin="86,320,0,0" VerticalAlignment="Top" Width="199"/>
+        <Button Content="Set" HorizontalAlignment="Left" Margin="301,203,0,0" VerticalAlignment="Top" Click="SetHue_Clicked"/>
+        <Button Content="Set" HorizontalAlignment="Left" Margin="301,273,0,0" VerticalAlignment="Top" Click="SetSaturation_Clicked"/>
+        <Button Content="Set" HorizontalAlignment="Left" Margin="301,343,0,0" VerticalAlignment="Top" Click="SetBrightness_Clicked"/>
+    </Grid>
+</Page>

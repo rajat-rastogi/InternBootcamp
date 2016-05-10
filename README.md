@@ -1,2 +1,2 @@
 # InternBootcamp
-Repository fot the intern bootcamp.
+Repository for the intern bootcamp.

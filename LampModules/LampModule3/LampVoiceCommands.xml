@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="AllJoynLampCommandSet_en-us">
+    <CommandPrefix>Genie </CommandPrefix>
+    <Example> turn off my lamp </Example>
+    <Command Name="ToggleLamp">
+      <Example> turn on my lamp </Example>
+      <ListenFor> [and] {switchVerb} {switchableStateChange} [my] [the] {switchableDevice} </ListenFor>
+      <ListenFor> [and] {switchVerb} [my] [the] {switchableDevice} {switchableStateChange} </ListenFor>
+      <Feedback> OK, I will {switchVerb} {switchableStateChange} your {switchableDevice} </Feedback>
+      <Navigate/>
+    </Command>
+    <PhraseList Label="switchableStateChange">
+      <Item> on </Item>
+      <Item> off </Item>
+    </PhraseList>
+    <PhraseList Label="switchableDevice">
+      <Item> lamp </Item>
+      <Item> lamps </Item>
+      <Item> bulb </Item>
+      <Item> bulbs </Item>
+      <Item> light </Item>
+      <Item> lights </Item>
+    </PhraseList>
+    <PhraseList Label="switchVerb">
+      <Item> turn </Item>
+      <Item> switch </Item>
+      <Item> change </Item>
+      <Item> set </Item>
+    </PhraseList>
+  </CommandSet>
+</VoiceCommands>
