@@ -27,6 +27,7 @@ namespace LampModule3
         }
 
         public event EventHandler LampFound;
+        public event EventHandler LampStateChanged;
 
         public async Task<bool> GetOnOffAsync()
         {
@@ -173,8 +174,14 @@ namespace LampModule3
                 {
                     consumer = joinSessionResult.Consumer;
                     LampFound?.Invoke(this, new EventArgs());
+                    consumer.Signals.LampStateChangedReceived += Signals_LampStateChangedReceived;
                 }
             }
+        }
+
+        private void Signals_LampStateChangedReceived(LampStateSignals sender, LampStateLampStateChangedReceivedEventArgs args)
+        {
+            LampStateChanged?.Invoke(this, new EventArgs());
         }
     }
 }

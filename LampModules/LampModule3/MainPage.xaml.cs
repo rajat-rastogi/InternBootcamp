@@ -1,6 +1,7 @@
 ﻿using System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
 
 namespace LampModule3
 {
@@ -18,11 +19,17 @@ namespace LampModule3
 
             lampHelper = new LampHelper();
             lampHelper.LampFound += LampHelper_LampFound;
+            lampHelper.LampStateChanged += LampHelper_LampStateChanged;
         }
 
         private void LampHelper_LampFound(object sender, EventArgs e)
         {
             lampFound = true;
+            GetLampState();
+        }
+
+        private void LampHelper_LampStateChanged(object sender, EventArgs e)
+        {
             GetLampState();
         }
 
