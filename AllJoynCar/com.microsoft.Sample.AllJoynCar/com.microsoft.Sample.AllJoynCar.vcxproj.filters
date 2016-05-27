@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>41d4a157-1b84-48bd-b131-8399a2327a6b</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="AllJoynBusObjectManager.cpp" />
+    <ClCompile Include="AllJoynCarConsumer.cpp" />
+    <ClCompile Include="AllJoynCarProducer.cpp" />
+    <ClCompile Include="AllJoynCarServiceEventAdapter.cpp" />
+    <ClCompile Include="AllJoynCarServiceEventArgs.cpp" />
+    <ClCompile Include="AllJoynCarSignals.cpp" />
+    <ClCompile Include="AllJoynCarWatcher.cpp" />
+    <ClCompile Include="AllJoynHelpers.cpp" />
+    <ClCompile Include="TypeConversionHelpers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="AllJoynBusObjectManager.h" />
+    <ClInclude Include="AllJoynCarConsumer.h" />
+    <ClInclude Include="AllJoynCarEventArgs.h" />
+    <ClInclude Include="AllJoynCarMethodResults.h" />
+    <ClInclude Include="AllJoynCarProducer.h" />
+    <ClInclude Include="AllJoynCarServiceEventAdapter.h" />
+    <ClInclude Include="AllJoynCarServiceEventArgs.h" />
+    <ClInclude Include="AllJoynCarSignals.h" />
+    <ClInclude Include="AllJoynCarStructures.h" />
+    <ClInclude Include="AllJoynCarWatcher.h" />
+    <ClInclude Include="AllJoynHelpers.h" />
+    <ClInclude Include="IAllJoynCarService.h" />
+    <ClInclude Include="TypeConversionHelpers.h" />
+  </ItemGroup>
+</Project>

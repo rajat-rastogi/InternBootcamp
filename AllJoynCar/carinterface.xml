@@ -1,0 +1,12 @@
+<node name="/com/microsoft/Samples">
+  <interface name="com.microsoft.Sample.AllJoynCar">
+    <method name="Drive">
+      <arg name="OnOff" type="b" direction="in" />
+      <arg name="Direction" type="u" direction="in" />
+    </method>
+    <property name="Speed" type="u" access="readwrite" />
+    <property name="State" type="(bu)" access="read">
+      <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="true" />
+    </property>
+  </interface>
+</node>
